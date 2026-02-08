@@ -85,41 +85,19 @@ export default function ValentineQuestion() {
                             animate={{ scale: 1, opacity: 1 }}
                             className="flex flex-col items-center"
                         >
-                            <div className="mb-4 flex gap-4 text-7xl">
+                            <div className="mb-8">
                                 <motion.div
-                                    animate={{ y: [0, -20, 0], rotate: [0, -10, 10, 0] }}
-                                    transition={{ repeat: Infinity, duration: 1 }}
+                                    animate={{ scale: [1, 1.2, 1] }}
+                                    transition={{ repeat: Infinity, duration: 1.5 }}
                                 >
-                                    🫵
-                                </motion.div>
-                                <motion.div
-                                    animate={{ y: [0, -20, 0], rotate: [0, 10, -10, 0] }}
-                                    transition={{ repeat: Infinity, duration: 1, delay: 0.2 }}
-                                >
-                                    🤣
+                                    <Heart size={80} className="text-rose-600" fill="currentColor" />
                                 </motion.div>
                             </div>
-                            <Title as="h2" className="text-5xl md:text-7xl font-bold text-rose-600 mb-8 font-serif leading-tight">
-                                Sorry, <br />
-                                <span className="text-rose-500">Main Randwa Hoon!</span>
+                            <Title as="h2" className="text-6xl md:text-8xl font-bold text-rose-600 mb-8 font-serif leading-tight">
+                                YAY! I Love You! <br />
+                                <span className="text-rose-500">Forever</span> ❤️
                             </Title>
-
-                            {/* Giant Animated Laughing Emoji */}
-                            <motion.div
-                                animate={{
-                                    scale: [1, 1.2, 1],
-                                    rotate: [0, -10, 10, -10, 0],
-                                    y: [0, -20, 0]
-                                }}
-                                transition={{
-                                    duration: 2,
-                                    repeat: Infinity,
-                                    ease: "easeInOut"
-                                }}
-                                className="text-[150px] leading-none mb-8 drop-shadow-2xl filter"
-                            >
-                                🤣
-                            </motion.div>
+                            <Text className="text-2xl text-rose-400 font-light tracking-wide italic">You've made me the luckiest person alive.</Text>
 
                             {/* Confetti Explosion */}
                             <div className="absolute inset-0 pointer-events-none">
