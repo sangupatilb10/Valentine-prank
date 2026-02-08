@@ -1,0 +1,70 @@
+@import "tailwindcss";
+@source "../node_modules/rizzui/dist";
+
+@theme {
+    --font-serif: var(--font-playfair);
+    --font-sans: var(--font-inter);
+}
+
+@layer base {
+    :root {
+        --background: #fff0f3;
+        /* Lavender Blush */
+        --foreground: #2d1b1e;
+        --muted: #ffc2d1;
+        --muted-foreground: #a4133c;
+
+        --border-radius: 1rem;
+        --border-width: 1px;
+        --border-color: #ffc2d1;
+
+        --text-primary: #800f2f;
+        --text-secondary: #a4133c;
+
+        --primary: #ff4d6d;
+        --primary-foreground: #ffffff;
+
+        --rose-50: #fff0f3;
+        --rose-100: #ffccd5;
+        --rose-200: #ffb3c1;
+        --rose-300: #ff8fa3;
+        --rose-400: #ff758f;
+        --rose-500: #ff4d6d;
+        --rose-600: #c9184a;
+        --rose-700: #a4133c;
+        --rose-800: #800f2f;
+        --rose-900: #590d22;
+        --deep-wine: #590d22;
+        --soft-blush: #fff0f3;
+        --rose-gold: #ffb3c1;
+    }
+
+    body {
+        color: var(--foreground);
+        background: var(--background);
+        font-family: var(--font-sans), sans-serif;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3,
+    .font-serif {
+        font-family: var(--font-serif), serif;
+    }
+}
+
+/* Glassmorphism Utility */
+.glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, #be123c 0%, #4c0519 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
